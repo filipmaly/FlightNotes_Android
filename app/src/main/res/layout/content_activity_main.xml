@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:minHeight="500dp"
+    android:background="#fbec67">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Záznam z Letiště"
+        android:id="@+id/startbuttonAirport"
+        android:layout_marginTop="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF070707"
+        android:background="#80e51a"
+        android:onClick="kliknuti"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Nabíjení baterek"
+        android:id="@+id/startbuttonrecharge"
+        android:textColor="#FF070707"
+        android:background="#18acf1"
+        android:onClick="kliknuti"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/startbuttonAirport"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Modely"
+        android:id="@+id/startbuttonmodel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/startbuttonrecharge"
+        android:layout_marginTop="100dp"
+        android:background="#ef0f0f"
+        android:onClick="kliknuti" />
+
+</RelativeLayout>
